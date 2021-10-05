@@ -1,0 +1,59 @@
+img {
+  width: 200px;
+  height: 150px;
+  border-radius: 100%;
+  object-fit: cover;
+}
+
+* {
+  text-align: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+[class*="pic"] {
+  border: 1px solid rgba(204, 204, 204, 0.5);
+  margin: 15px;
+  border-radius: 15px;
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, 0.37);
+  padding: 12px;
+  width: 20%;
+}
+
+.pic1 {
+  order: 4;
+}
+.pic2 {
+  order: 1;
+}
+.pic3 {
+  order: 2;
+}
+.pic4 {
+  order: 1;
+}
+
+@media (max-width: 992px) {
+  [class*="pic"] {
+    width: 40%;
+  }
+}
+
+@media (max-width: 600px) {
+  [class*="pic"] {
+    width: 100%;
+  }
+}
+h2 {
+  color: #ff9668;
+}
+p {
+  color: grey;
+}
+h3 {
+  color: hotpink;
+}
